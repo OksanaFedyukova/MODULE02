@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(-90deg, #e0d2dd, #746486 );
+  background-repeat: no-repeat;    
+}
+
+main {
+  background-color: rgba(208, 170, 170, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 95vw;
+}
+
+h1 {
+  margin-top: 15px;
+  text-align: center;
+  color: #342d3b;
+  margin-bottom: 20px;
+}
+
+label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 10px;
+}
+
+.grid-title {
+  grid-column: span 3; 
+  color: #fff;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #c8b8dc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover,
+textarea:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+input[type="submit"] {
+  grid-column: span 2; 
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #746486;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background-color: #000000;
+}
+footer{
+  position: fixed;
+  margin-bottom: 0;
+  background-color: #333;
+  color: #fff;
+  height: 120px;
+}
