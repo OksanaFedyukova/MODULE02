@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Empleados Nuevos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Empleados Nuevos</h1>
+        <section>
+            <form action="index.php" method="post">
+                    <div class="empleado">
+                        <label for="nombre0">Nombre:</label><br>
+                        <input type="text" id="nombre0" name="personas[0][nombre]" required><br><br>
+
+                        <label for="apellido0">Apellido:</label><br>
+                        <input type="text" id="apellido0" name="personas[0][apellido]" required><br><br>
+
+                        <label for="email0">Email:</label><br>
+                        <input type="email" id="email0" name="personas[0][email]" required><br><br>
+
+                        <label>Género:</label><br>
+                        <input type="radio" id="genero_masculino0" name="personas[0][genero]" value="Masculino" required>
+                        <label for="genero_masculino0">Masculino</label><br>
+                        <input type="radio" id="genero_femenino0" name="personas[0][genero]" value="Femenino" required>
+                        <label for="genero_femenino0">Femenino</label><br><br>
+
+                        <label>Aficiones:</label><br>
+                        <input type="checkbox" id="aficion_lectura0" name="personas[0][aficiones][]" value="Lectura">
+                        <label for="aficion_lectura0">Lectura</label><br>
+                        <input type="checkbox" id="aficion_deporte0" name="personas[0][aficiones][]" value="Deporte">
+                        <label for="aficion_deporte0">Deporte</label><br>
+                        <input type="checkbox" id="aficion_musica0" name="personas[0][aficiones][]" value="Música">
+                        <label for="aficion_musica0">Música</label><br><br>
+
+                        <label for="pais0">País:</label><br>
+                        <select id="pais0" name="personas[0][pais]">
+                            <option value="España">España</option>
+                            <option value="México">Ucrania</option>
+                            <option value="Argentina">Andora</option>
+                        </select><br><br>
+                    </div>
+                    
+                    <div class="empleado">
+                        <label for="nombre1">Nombre:</label><br>
+                        <input type="text" id="nombre1" name="personas[1][nombre]" required><br><br>
+
+                        <label for="apellido1">Apellido:</label><br>
+                        <input type="text" id="apellido1" name="personas[1][apellido]" required><br><br>
+
+                        <label for="email1">Email:</label><br>
+                        <input type="email" id="email1" name="personas[1][email]" required><br><br>
+
+                        <label>Género:</label><br>
+                        <input type="radio" id="genero_masculino1" name="personas[1][genero]" value="Masculino" required>
+                        <label for="genero_masculino1">Masculino</label><br>
+                        <input type="radio" id="genero_femenino1" name="personas[1][genero]" value="Femenino" required>
+                        <label for="genero_femenino1">Femenino</label><br><br>
+
+                        <label>Aficiones:</label><br>
+                        <input type="checkbox" id="aficion_lectura1" name="personas[1][aficiones][]" value="Lectura">
+                        <label for="aficion_lectura1">Lectura</label><br>
+                        <input type="checkbox" id="aficion_deporte1" name="personas[1][aficiones][]" value="Deporte">
+                        <label for="aficion_deporte1">Deporte</label><br>
+                        <input type="checkbox" id="aficion_musica1" name="personas[1][aficiones][]" value="Música">
+                        <label for="aficion_musica1">Música</label><br><br>
+
+                        <label for="pais1">País:</label><br>
+                        <select id="pais1" name="personas[1][pais]">
+                            <option value="España">España</option>
+                            <option value="México">Ucrania</option>
+                            <option value="Argentina">Andora</option>
+                        </select><br><br>
+                    </div>
+                    <div class="empleado">
+                        <label for="nombre1">Nombre:</label><br>
+                        <input type="text" id="nombre1" name="personas[2][nombre]" required><br><br>
+
+                        <label for="apellido1">Apellido:</label><br>
+                        <input type="text" id="apellido1" name="personas[2][apellido]" required><br><br>
+
+                        <label for="email1">Email:</label><br>
+                        <input type="email" id="email1" name="personas[2][email]" required><br><br>
+
+                        <label>Género:</label><br>
+                        <input type="radio" id="genero_masculino1" name="personas[2][genero]" value="Masculino" required>
+                        <label for="genero_masculino1">Masculino</label><br>
+                        <input type="radio" id="genero_femenino1" name="personas[2][genero]" value="Femenino" required>
+                        <label for="genero_femenino1">Femenino</label><br><br>
+
+                        <label>Aficiones:</label><br>
+                        <input type="checkbox" id="aficion_lectura1" name="personas[2][aficiones][]" value="Lectura">
+                        <label for="aficion_lectura1">Lectura</label><br>
+                        <input type="checkbox" id="aficion_deporte1" name="personas[2][aficiones][]" value="Deporte">
+                        <label for="aficion_deporte1">Deporte</label><br>
+                        <input type="checkbox" id="aficion_musica1" name="personas[2][aficiones][]" value="Música">
+                        <label for="aficion_musica1">Música</label><br><br>
+
+                        <label for="pais1">País:</label><br>
+                        <select id="pais1" name="personas[2][pais]">
+                            <option value="España">España</option>
+                            <option value="México">Ucrania</option>
+                            <option value="Argentina">Andora</option>
+                        </select><br><br>
+                    </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
