@@ -8,7 +8,10 @@ function cabezera() {
     <meta charset="UTF-8">
     <title>ActividadFormulario</title>
     <link rel="stylesheet" href="style.css">
-</head>' ;
+</head>
+<body>
+ <header>i am header</header>
+' ;
 
 } ; 
 function footer(){

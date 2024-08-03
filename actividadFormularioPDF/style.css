@@ -1,4 +1,5 @@
 body {
+margin: 0;
   font-family: Arial, sans-serif;
   justify-content: center;
   align-items: center;
@@ -81,9 +82,8 @@ input[type="submit"]:hover {
   background-color: #000000;
 }
 footer{
-  position: fixed;
   margin-bottom: 0;
-  background-color: #333;
   color: #fff;
   height: 120px;
+  width: 100vw;
 }

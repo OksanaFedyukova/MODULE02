@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $actitud = htmlspecialchars($_POST['actitud']);
     $idiomas = isset($_POST['idiomas']) ? $_POST['idiomas'] : [];
 
-    $html = "<h1>Expediente de Alumno</h1>";
+    $html = "<h1>Expediente de alumno</h1>";
     $html .= "<p><strong>Nombre:</strong> $nombre $apellido1 $apellido2</p>";
     $html .= "<table border='1' style='width:100%; border-collapse: collapse;'>";
     $html .= "<tr>
@@ -39,5 +39,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dompdf->loadHtml($html);
     $dompdf->setPaper('A4', 'portrait');
     $dompdf->render();
-    $dompdf->stream("expediente_' . preg_replace('/[^a-zA-Z0-9_-]/', '_', $nombre) . '.pdf", ["Attachment" => false]);
+    $dompdf->stream('expediente_' . preg_replace('/[^a-zA-Z0-9_-]/', '_', $apellido1) . '.pdf', ["Attachment" => false]);
 } 
